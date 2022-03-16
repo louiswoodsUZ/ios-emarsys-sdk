@@ -28,10 +28,10 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 
     EMSReachability *noteObject = (__bridge EMSReachability *) info;
     // Post a notification to notify the client that the network reachability changed.
-    [noteObject.operationQueue addOperationWithBlock:^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:kEMSReachabilityChangedNotification
-                                                            object:noteObject];
-    }];
+//    [noteObject.operationQueue addOperationWithBlock:^{
+//        [[NSNotificationCenter defaultCenter] postNotificationName:kEMSReachabilityChangedNotification
+//                                                            object:noteObject];
+//    }];
 }
 
 
